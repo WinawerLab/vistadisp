@@ -1,1 +1,0 @@
-function y=killDC(x);% KILLDC - subtract the average value from an array (or vector)% usage: y = killDC(x)% lkc 10/20/00y = x - aave(x);

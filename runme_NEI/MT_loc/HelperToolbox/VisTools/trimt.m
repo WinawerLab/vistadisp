@@ -1,1 +1,0 @@
-function Y=trimt(X, N)%% TRIMT	trims N rows from the top of an array%% usage:%   Y = TRIMT(X, N) trims N elements off the top of the array,%% see also: triml, trimb, trimr, trim%% Lawrence K. Cormack% history:% ??/??/19??    lkc     wrote it% 07/04/2002    lkc     added and formated commentsX(1:N,:)=[];Y=X;

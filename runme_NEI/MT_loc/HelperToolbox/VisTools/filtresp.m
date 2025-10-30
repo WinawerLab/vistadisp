@@ -1,1 +1,0 @@
-function r = filtresp(s, f)% FILTRESP% r = filtresp(s, f) - sum of the element-by-element product% of s and f.  The result is equivalent to the value of the 2D% convolution at zero offset.  It's so named because it gives the% response of the linear filter f centered on stimulus s.r = ssum(s.*f);

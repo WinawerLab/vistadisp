@@ -1,1 +1,0 @@
-function y = cosbar(h, w)% usage y = cosbar(h, w) % makes a bar of width w with a 1/2 cyc cosine in the columnsx = linspace(-pi/2, pi/2, h);y = cos(x)';y = repmat(y, 1, w);

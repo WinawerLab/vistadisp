@@ -1,1 +1,0 @@
-function clsscreen('CloseAll');

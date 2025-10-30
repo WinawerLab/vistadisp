@@ -1,1 +1,0 @@
-function Y=trimb(X, N)%% TRIMB	trim N rows from the bottom of an array%% usage:%   Y = TRIMB(X, N) trims N elements off the bottom of the array,%% see also: triml, trimt, trimr, trim%% Lawrence K. Cormack% history:% ??/??/19??    lkc     wrote it% 07/04/2002    lkc     added and formated comments[R C]=size(X);s=R-N+1;X(s:R,:)=[];Y=X;

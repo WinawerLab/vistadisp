@@ -1,1 +1,0 @@
-function cutlines(h)% CUTLINES removes nappy gridlines from volumetric slice plotsha = get(h, 'Children');n = size(ha);for i=1:n,	set(ha(i), 'EdgeColor', 'none');end

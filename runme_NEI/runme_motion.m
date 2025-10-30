@@ -4,9 +4,9 @@
 
 tbUse vistadisp
 clearvars; close all; clc
-debugTrigger = 0;
+debugTrigger = 0; %0;
 display = 3;   % 1-AD % 2-laptop % 3-NY
-params.doEyelink = 1;
+params.doEyelink = 0; %0;
 Screen('Preference', 'TextRenderer', 0); % For draw formatted text
 
 addpath(genpath('./MT_loc/HelperToolbox'));
@@ -14,7 +14,7 @@ addpath(genpath('./MT_loc/HelperToolbox'));
 wlsubjnum = input('What is the subject wlsubj number? \n\n','s');
 subID = sprintf('%s_',wlsubjnum);
 
-runs = 4;
+runs = 3;
 mydir  = '/Users/winawerlab/matlab/toolboxes/vistadisp/data_NEI/mot';
 
 %%

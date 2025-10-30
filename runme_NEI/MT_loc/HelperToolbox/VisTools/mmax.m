@@ -1,1 +1,0 @@
-function y = mmax(x);% SSUM computes a 2d sum% lkc 10/Jul/2010 improved it y = max(x(:));
