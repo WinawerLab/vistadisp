@@ -1,0 +1,1 @@
+function A =one2ff(B)%ONE2FF scales [-1 1] data to [0-255].A = uint8(round(127*B+127));

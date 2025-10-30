@@ -1,0 +1,1 @@
+function y=geoMean(x,dim)%	GEOMEAN   Geometric mean value.%   Works just like MEAN() but computes the geometric mean%	-lkcif nargin==1,   % Determine which dimension SUM will use  dim = min(find(size(x)~=1));  if isempty(dim), dim = 1; end  y = exp(sum(log(x))/size(x,dim));else  y = exp(sum(log(x),dim)/size(x,dim));end

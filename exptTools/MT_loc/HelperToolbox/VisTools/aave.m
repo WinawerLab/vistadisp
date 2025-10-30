@@ -1,0 +1,1 @@
+function y=aave(x);% AAVE - average value of a matrix (or vector)% usage: y = aave(x)% lkc 10/20/00% lkc 10/Jul/2010 improved it y = mean(x(:));

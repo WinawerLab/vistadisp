@@ -1,0 +1,1 @@
+function Y=triml(X, N)%% TRIML	trim N columns from the left of an array%% usage:%   Y = TRIML(X, N) trims N elements from the left of the array,%% see also: trimb, trimt, trimr, trim%% Lawrence K. Cormack% history:% ??/??/19??    lkc     wrote it% 07/04/2002    lkc     added and formated commentsX(:,1:N)=[];Y=X;

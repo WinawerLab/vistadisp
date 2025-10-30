@@ -1,0 +1,1 @@
+function A = bumpup(B)% BUMPUP bumps [-1 1] data up to [0 1].A = (B+1)/2;

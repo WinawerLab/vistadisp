@@ -1,0 +1,1 @@
+function blur = disp2blur(disp)%	DISP2BLUR(disp) converts retinal disparity (in arcmin) into%	the amount of defocus in diopters.%	Accomodation and convergence are assumed to agreepupil = 0.6; 	% pupil size, in cmipd = 6.0;		% ipd, in cmdisp = disp./60 .* (pi./180);blur = atan(tan(disp).*(pupil./(2.*ipd)));blur = 60.* (blur.*(180./pi));

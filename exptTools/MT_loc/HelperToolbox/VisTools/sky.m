@@ -1,0 +1,1 @@
+function map = sky(n);% SKY makes a white-to-blue colormap%	sky()'s colormap yields really cool %	clouds when applied to 1/f noise. %	11/12/2000: -lkcif nargin < 1, n = size(get(gcf,'colormap'),1); endmap=ones(n, 3);map(:, 1) = linspace(0, 1, n)';map(:, 2) = map(:, 1);

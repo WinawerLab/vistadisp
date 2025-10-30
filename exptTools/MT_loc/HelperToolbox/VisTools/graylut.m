@@ -1,0 +1,1 @@
+function m = graylut(n)% GRAYLUT makes a grayscale lookup tablem = ones(n,3);m(:,1) = linspace(0,1,n)';m(:,2) = m(:,1); m(:,3) = m(:,1);

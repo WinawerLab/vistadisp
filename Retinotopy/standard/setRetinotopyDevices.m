@@ -40,7 +40,7 @@ for i=1:length(productNames)                                               % for
         break;
     end
 end
-%%%
+%%
 params.devices.keyInputExternal = deviceNumber;
 
 

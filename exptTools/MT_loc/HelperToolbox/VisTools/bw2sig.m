@@ -1,0 +1,1 @@
+function s = bw2sig(w, b)% BW2SIG% bw2sig returns a space constant of a gabor function given an octave bandwidth% and carrier frequency% usage: s = bw2sig(w, b) where%				w is the frequency in cyc/unit%				b is the full width at half-height in octaves%				s is returned in the unit of the frequecy denominatora = sqrt(log(2)/2);s = (a./(pi.*w)) .* ((2.^b +1)./(2.^b-1));

@@ -1,0 +1,1 @@
+function y = mmin(x);% SSUM computes a 2d sum% lkc 10/Jul/2010 improved it y = min(x(:));

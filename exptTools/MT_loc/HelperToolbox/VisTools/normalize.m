@@ -1,0 +1,1 @@
+function n = normalize(m, mx, mn)% NORMALIZE   Returns a normalized copy of the input vector or array.% 	normalize(m) normalizes to 0-1%	normalize(m, mx) normalizes to 0-mx%	normalize(m, mx, mn) normalizes to mn-mxif (nargin < 2),	mx=1;	mn=0;elseif (nargin < 3),	mn=0;endn = m - min(min(m));n = n./max(max(n));n = n*(mx-mn)+mn;

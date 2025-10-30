@@ -1,0 +1,1 @@
+function y = invert(x)% INVERT - flip in input upside-down (value-wise)oldave = aave(x);y = -1.*killdc(x);y= y+oldave;

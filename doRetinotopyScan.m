@@ -69,7 +69,6 @@ try
     %% Initialize EyeLink if requested
     if params.doEyelink
         
-        if params.sesNum == 1
         fprintf('\n[%s]: Setting up Eyelink..\n',mfilename)
         
         Eyelink('SetAddress','192.168.1.5');
@@ -86,12 +85,10 @@ try
         %
         % %     Throw an error if calibration failed
         if s~=0
-            error('link_sample_data error, status: ', s)
+            error('link_sample_data error, status: %d', s)
         end
    
-        el = prepEyelink(params.display.windowPtr);
-        
-        end
+        el = prepEyelink(params.display.windowPtr);            
         
         ELfileName = sprintf('%s.edf', sesFileName);
 
@@ -107,9 +104,9 @@ try
         else
             fprintf('\n[%s]: Succesfully openend Eyelink file..\n',mfilename)
         end
-        
+         if (params.sesNum == 1) || (params.sesNum == 5)
         cal = EyelinkDoTrackerSetup(el);
-        
+         end
     end
         
     

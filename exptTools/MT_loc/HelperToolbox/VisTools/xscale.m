@@ -1,0 +1,1 @@
+function newscale = xscale(xmin, xmax);% xscale(xmin, xmax) rescales the domain of the current 2D plotoldsc = axis;newscale = [xmin xmax oldsc(3) oldsc(4)];axis(newscale);

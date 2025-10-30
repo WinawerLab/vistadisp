@@ -1,0 +1,1 @@
+function y = halfwave(x)% HALFWAVE   Halfwave recitify a vector or matrixy = x;y(find(x<0)) = 0;

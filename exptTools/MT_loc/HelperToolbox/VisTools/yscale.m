@@ -1,0 +1,1 @@
+function newscale = yscale(ymin, ymax);% yscale(ymin, ymax) rescales the range of the current 2D plotoldsc = axis;newscale = [oldsc(1) oldsc(2) ymin ymax];axis(newscale);
